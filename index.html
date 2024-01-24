@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div id="wrapper">
+        <div class="content-container">
+            <h1>Weather app</h1>
+
+            <div class="switch-tag-container">
+                <span class="yourWeather" data-your-weather>Your Weather</span>
+                <span class="searchWeather" data-search-weather>Search Weather</span>
+            </div>
+
+            <div class="dynamic-data-container" data-dynamic-value-container>
+
+                <div class="grant-access-container" data-grant-access>
+                    <img src="assets/location.png" alt="" loading="lazy" width="60" height="60">
+                    <h2>grant location access</h2>
+                    <p>allow access to get weather information</p>
+                    <button class="btn" data-grant-access-button>Grant access</button>
+                </div>
+
+                
+                <div class="search-container" data-search-container>
+                    <input data-input-city type="text" placeholder="Enter Your City Name....">
+                    <img data-search-icon src="assets/search.png" alt="" width="16px" height="16px">
+                </div>
+                
+                <div class="loader-container" data-loader-container>
+                    <img src="assets/loading.gif" alt="" width="80px" height="80px">
+                    <p>Loading......</p>
+                </div>
+
+                <div class="dynamic-final-details" data-dynamic-details>
+                    <div class="cityBox">
+                        <div class="city-name" data-city-name></div>
+                        <img data-country-image src="" alt="">
+                    </div>
+                    <p data-description></p>
+                    
+                        <img src="" alt="" data-weather-icon>
+                           
+                    <div class="temprature" data-temprature></div>           
+
+                    <div class="card-box">
+                        <!-- Box 1 -->
+                        <div class="detail-box">
+                            <img data-windspeed-image src="" alt="" width="40px" height="40px">
+                            <h3>Windspeed</h3>
+                            <p data-windspeed></p>
+                        </div>
+                        <!-- Box 2 -->
+                        <div class="detail-box">
+                            <img data-humidity-image src="" alt="" width="40px" height="40px">
+                            <h3>Humidity</h3>
+                            <p data-humidity></p>
+                        </div>
+                        <!-- Box 3 -->
+                        <div class="detail-box">
+                            <img data-clouds-image src="" alt="" width="40px" height="40px">
+                            <h3>clouds</h3>
+                            <p data-clouds></p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
